@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Nostr NIP-05: Name Verification using GitHub Pages</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.1.0/github-markdown-dark.css">
+        <style>
+            .markdown-body {
+                box-sizing: border-box;
+                min-width: 200px;
+                max-width: 980px;
+                margin: 0 auto;
+                padding: 45px;
+            }
+        
+            @media (max-width: 767px) {
+                .markdown-body {
+                    padding: 15px;
+                }
+            }
+        </style>
+    </head>
+    <body class="markdown-body">
+        <h1>Nostr NIP-05: Name Verification using GitHub Pages</h1>
+        <p>
+            Below is a simple guide for implementing <a href="https://github.com/nostr-protocol/nips/blob/master/05.md">NIP-05</a> name verification using
+            <a href="https://pages.github.com/">GitHub Pages</a>.
+        </p>
+        <ol>
+            <li>Determine the hex representation of your public key. If you have the npub, use <a href="https://damus.io/key/">https://damus.io/key/</a> to convert it.</li>
+            <li>Create a new repo on GitHub with the name <code>&lt;your username&gt;.github.io</code>.</li>
+            <li>Create a <code>_config.yml</code> file with <code>include: [".well-known"]</code></li>
+            <li>Create a <code>.well-known</code> folder.</li>
+            <li>Create a <code>nostr.json</code> inside the <code>.well-known</code> folder with the following content, replacing your user name and hex public key.</li>
+        </ol>
+        <p>
+<pre>
+{
+  "names": {
+    "&lt;your nostr username&gt;": "&lt;your nostr hex key&gt;"
+  }
+}
+</pre>
+        </p>
+
+        <h4>Similar Guides</h3>
+        <ul>
+            <li>
+                <a href="https://patrickulrich.com/2022/12/26/how-to-setup-nip-05-verification-using-github-pages/">By patrickulrich</a> - uses a custom domain name
+            <li>
+                <a href="https://medium.com/@fncymfyp/nip-05-verification-through-github-pages-eabfc9cb63bc">By Vincenzo Marcella</a> - uses a .nojekyll file instead of _config.yml
+            </li>
+        </ul>
+    </body>
+</html>
