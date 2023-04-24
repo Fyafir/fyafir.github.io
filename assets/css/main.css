@@ -110,7 +110,7 @@ body {
     transition: none !important; }
   body > * {
     position: relative;
-    z-index: 2; }
+    z-index: 1; }
   @media screen and (max-width: 1680px) {
     body {
       padding: 6em 3.5em 3.5em 3.5em; } }
