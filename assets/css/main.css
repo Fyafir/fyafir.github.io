@@ -834,6 +834,16 @@ button,
         margin-top: 0;
         position: absolute; } }
 
+/*Contador*/
+.contador {
+  float: right;
+}
+
+.contador img {
+  max-width: 100%;
+  height: auto;
+  border: none;
+}
 /* Footer */
 #footer {
   -moz-transition: opacity 0.5s ease-in-out;
