@@ -2,9 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
 
 /*
-	Dimension by HTML5 UP
 	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
 html, body, div, span, applet, object,
@@ -108,7 +106,32 @@ input, select, textarea {
 			-ms-transition: none !important;
 			transition: none !important;
 		}
-
+		.caixa {
+			position: relative;
+			background-color: rgba(255, 255, 255, 0);
+			border: 1px solid #cccccc00;
+			border-radius: 5px;
+			padding: 10px;
+			margin: 10px;
+			cursor: pointer;
+			transition: all 0.3s ease;
+		  }
+		  
+		  .caixa:hover {
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+		  }
+		  
+		  .caixa::before {
+			content: " ";
+			position: absolute;
+			top: -10px;
+			left: -10px;
+			right: -10px;
+			bottom: -10px;
+			background-color: rgba(255, 255, 255, 0.5);
+			z-index: -1;
+			border-radius: 5px;
+		  }
 /* Type */
 
 	html {
@@ -1140,9 +1163,12 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
-			background-size: auto, 256px 256px;
-			background-position: center, center;
-			background-repeat: no-repeat, repeat;
+			background-size: auto,
+ 256px 256px;
+			background-position: center,
+ center;
+			background-repeat: no-repeat,
+ repeat;
 			z-index: 2;
 		}
 
