@@ -105,33 +105,7 @@ input, select, textarea {
 			-webkit-transition: none !important;
 			-ms-transition: none !important;
 			transition: none !important;
-		}
-		.caixa {
-			position: relative;
-			background-color: rgba(255, 255, 255, 0);
-			border: 1px solid #cccccc00;
-			border-radius: 5px;
-			padding: 5px;
-			margin: 10px;
-			cursor: pointer;
-			transition: all 0.3s ease;
-		  }
-		  
-		  .caixa:hover {
-			box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-		  }
-		  
-		  .caixa::before {
-			content: " ";
-			position: absolute;
-			top: -5px;
-			left: 60px;
-			right: 60px;
-			bottom: 80px;
-			background-color: rgba(255, 255, 255, 0.171);
-			z-index: -1;
-			border-radius: 1px;
-		  }
+    }
 /* Type */
 
 	html {
@@ -1521,7 +1495,20 @@ input, select, textarea {
 				#header nav.use-middle:after {
 					display: none;
 				}
-
+			}
+			.caixa {
+				position: top;
+				background-color: rgba(241, 241, 241, 0.158);
+				border: 60;
+				border-radius: 65px;
+				padding: -20px;
+				margin: 70px;
+				cursor: pointer;
+				transition: all 0.3s ease;
+			  }
+			  
+			  .caixa:hover {
+				box-shadow: 0 0 5px rgba(231, 223, 223, 0.014);
 		}
 
 /* Main */
@@ -1682,3 +1669,4 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+	
