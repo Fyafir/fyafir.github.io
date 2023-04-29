@@ -11,4 +11,4 @@ Unsplash (unsplash.com)
 Fonte impressionante ( fontawesome.io )
 
 De outros:
-html5up.net | @ajlkn
+html5up.net | Base para desenvovimento
